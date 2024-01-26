@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Basic page needs-->
-    <title>Home | Apolo</title>
+    <title>HOME</title>
     <meta charset="UTF-8"/>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -10,7 +10,7 @@
     <!-- Mobile specific metas-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <!-- Favicon-->
-    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link rel="shortcut icon" href="images/logo-2.png" type="image/x-icon"/>
     <!-- Google Web Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface"/>
@@ -25,9 +25,7 @@
     <link rel="stylesheet" media="all" href="css/hamburgers.min.css"/>
     <link rel="stylesheet" media="all" href="css/animate.css"/>
     <link rel="stylesheet" media="all" href="vendors/fancybox/jquery.fancybox.min.css"/>
-    <link rel="stylesheet" media="all" href="vendors/revolution/css/settings.css"/>
-    <link rel="stylesheet" media="all" href="vendors/revolution/css/layers.css"/>
-    <link rel="stylesheet" media="all" href="vendors/revolution/css/navigation.css"/>
+    <link rel="stylesheet" media="all" href="vendors/fullpage/jquery.fullpage.min.css"/>
     <link rel="stylesheet" media="all" href="vendors/owl-carousel/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" media="all" href="vendors/mCustomScrollbar/jquery.mCustomScrollbar.min.css"/>
     <link rel="stylesheet" media="all" href="vendors/arcticmodal/jquery.arcticmodal-0.3.css"/>
@@ -36,125 +34,51 @@
     <!-- Vendor JS-->
     <script src="vendors/modernizr.js"></script>
   </head>
-  <body class="apo-header-vertical-left">
+  <body class="apo-page-dark-skin apo-fp-photo-stream">
     <!-- Preloader-->
     <div class="apo-preloader">
       <div class="apo-preloader-outer">
         <div class="apo-preloader-inner">
           <div class="apo-loader">
-            <img src="images/logo-2.png" alt="">
+            <img src="img/THEPLUG-WEGGING_logo.png" alt="">
           </div>
         </div>
       </div>
     </div>
     <!-- End Preloader-->
     <!-- Site Header-->
-    <!-- Hidden Side Column-->
-    <div>
-      <aside id="apo-hidden-column" class="apo-hidden-column">
-        <div class="apo-hidden-column-container">
-          <header class="apo-hidden-column-header">
-            <div class="apo-hidden-column-col">
-              <div class="apo-grid apo-cols-2">
-                <div class="apo-grid-col"><a href="index.html" class="apo-logo"><img src="images/logo-2.png" alt=""/></a></div>
-                <div class="apo-grid-col apo-align-right">
-                  <!-- Social Networks-->
-                  <ul class="apo-social-networks">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                  </ul>
-                  <!-- End Social Networks-->
-                </div>
-              </div>
+    <!-- Site Header-->
+    <header id="header" class="apo-header apo-header-transparent">
+      <div class="apo-header-section">
+        <div class="apo-header-component-first">
+          <div class="apo-header-items">
+            <div class="apo-header-item">
+              <!-- Logo--><a href="index.html" title="Home"><img src="img/100.png" alt="Logo"/></a>
+              <!-- End Logo-->
             </div>
-          </header>
-          <div class="apo-hidden-column-content">
-            <div class="apo-hidden-column-col">
+          </div>
+        </div>
+        <div class="apo-header-component-middle">
+          <div class="apo-header-items">
+            <div class="apo-header-item">
               <!-- Navigation-->
               <nav class="apo-navigation-container">
                 <ul class="apo-navigation">
                   <li class="apo-has-children apo-current"><a href="index.html">Home</a>
-                    <!-- Sub Menu (level 2)-->
-                    <ul class="apo-sub-menu">
-                      <li class="apo-current"><a href="index.html">Main With Left White Header</a></li>
-                      <li><a href="home_slider_with_left_dark_header.html">Slider With Left Dark Header</a></li>
-                      <li><a href="home_striped.html">Striped Page With Top Transparent Header</a></li>
-                      <li><a href="home_slider_with_bottom_dark_header.html">Slider With Bottom Dark Header</a></li>
-                      <li><a href="home_full_page_scroll_with_top_transparent_header.html">Full Page Scroll With Top Transparent Header</a></li>
-                      <li><a href="home_personal.html">Personal With Left White Header</a></li>
-                      <li><a href="portfolio_grid_with_top_white_header.html">Grid Portfolio With Top White Header</a></li>
-                      <li><a href="portfolio_masonry_with_top_dark_header.html">Masonry Portfolio With Top Dark Header</a></li>
-                    </ul>
-                    <!-- End of SubMenu-->
                   </li>
-                  <li class="apo-has-children"><a href="pages_about_us.html">Pages</a>
-                    <!-- Sub Menu (level 2)-->
-                    <ul class="apo-sub-menu">
-                      <li><a href="pages_about_us.html">About Us</a></li>
-                      <li><a href="pages_about_me.html">About Me</a></li>
-                      <li><a href="extra_elements.html">Elements</a></li>
-                      <li><a href="typography.html">Typography</a></li>
-                      <li><a href="RTL/index.html">RTL Version</a></li>
-                    </ul>
-                    <!-- End of SubMenu-->
+                  <li class="apo-has-children"><a href="about.html">Pages</a>
                   </li>
-                  <li class="apo-has-children"><a href="portfolio_masonry_fit_width_4_columns.html">Portfolio</a>
-                    <!-- Sub Menu (level 2)-->
-                    <ul class="apo-sub-menu">
-                      <li><a href="portfolio_masonry_fit_width_4_columns.html">Masonry Fit Width 4 Columns</a></li>
-                      <li><a href="portfolio_masonry_fit_width_3_columns.html">Masonry Fit Width 3 Columns</a></li>
-                      <li><a href="portfolio_classic_sortable_4_columns.html">Classic Sortable 4 Columns</a></li>
-                      <li><a href="portfolio_single_post.html">Single Portfolio Post</a></li>
-                    </ul>
-                    <!-- End of SubMenu-->
+                  <li class="apo-has-children"><a href="portfolio.html">Portfolio</a>
                   </li>
-                  <li class="apo-has-children"><a href="blog_classic_sortable_3_columns.html">Blog</a>
-                    <!-- Sub Menu (level 2)-->
-                    <ul class="apo-sub-menu">
-                      <li><a href="blog_classic_sortable_3_columns.html">Classic Sortable 3 Columns</a></li>
-                      <li><a href="blog_classic_2_columns_with_sidebar.html">Classic 2 Columns With Sidebar</a></li>
-                      <li><a href="blog_grid_2_columns.html">Grid 2 Columns</a></li>
-                      <li><a href="blog_element_sizing_4_columns.html">Element Sizing 4 Columns</a></li>
-                      <li><a href="blog_fit_width_4_columns.html">Fit Width 4 Columns</a></li>
-                      <li><a href="blog_single_post.html">Single Blog Post</a></li>
-                      <li><a href="blog_single_post_with_sidebar.html">Single Blog Post With Sidebar</a></li>
-                    </ul>
-                    <!-- End of SubMenu-->
-                  </li>
-                  <li><a href="pages_contact.html">Contact</a></li>
+                  <li><a href="contact.html">Contact</a></li>
                 </ul>
               </nav>
               <!-- End Navigation-->
             </div>
           </div>
-          <footer class="apo-hidden-column-footer">
-            <div class="apo-hidden-column-col">
-              <div class="apo-hidden-column-actions">
-                <div class="apo-hidden-column-action">
-                  <form class="apo-oneline-form">
-                    <input type="search" name="s" placeholder="Search this website"/>
-                    <button type="submit"><i class="icon icon-magnifier"></i></button>
-                  </form>
-                </div>
-                <div class="apo-hidden-column-action">
-                  <button class="apo-close-btn apo-hidden-column-closing"><i class="icon icon-cross"></i>Close</button>
-                </div>
-              </div>
-            </div>
-          </footer>
         </div>
-      </aside>
-    </div>
-    <!-- End Hidden Side Column-->
-    <header id="header" class="apo-header apo-header-light apo-header-vertical">
-      <div class="apo-header-section">
-        <div class="apo-header-component-first">
+        <div class="apo-header-component-last">
           <div class="apo-header-items">
-            <div class="apo-header-item">
-              <!-- Logo--><a href="index.html" title="Home" class="apo-logo"><img src="images/logo-2.png" alt="Logo"/></a>
-              <!-- End Logo-->
-            </div>
             <div class="apo-header-item">
               <!-- Social Networks-->
               <ul class="apo-social-networks">
@@ -166,303 +90,126 @@
             </div>
           </div>
         </div>
-        <div class="apo-header-component-middle">
-          <div class="apo-header-items">
-            <div class="apo-header-item">
-              <h1 class="apo-page-title">Apolo Photography</h1>
-            </div>
-          </div>
-        </div>
-        <div class="apo-header-component-last">
-          <div class="apo-header-items">
-            <div class="apo-header-item">
-              <!-- Search-->
-              <button type="button" class="apo-header-button apo-hidden-column-invoker"><i class="icon icon-magnifier"></i></button>
-              <!-- End Search-->
-            </div>
-            <div class="apo-header-item">
-              <!-- Navigation Button-->
-              <div type="button" class="apo-header-button apo-hidden-column-invoker apo-d-xs-none hamburger hamburger--emphatic"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div>
-              <!-- End Navigation Button-->
-              <!-- Navigation Button-->
-              <div type="button" data-arctic-modal="modals/modal_full_screen_navigation.html" data-arctic-modal-type="ajax" class="apo-header-button hamburger apo-d-none apo-d-xs-inline-block hamburger--emphatic apo-hamburger-clickable"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div>
-              <!-- End Navigation Button-->
-            </div>
-          </div>
-        </div>
       </div>
     </header>
     <!-- End Site Header-->
     <!-- Page Content-->
     <div class="apo-page">
-      <!-- Slider-->
-      <div class="rev_slider_wrapper fullscreen-container">
-        <div id="rev-slider-2" class="rev_slider fullscreenbanner apo-revslider-theme">
-          <ul>
-            <!-- Slide 1-->
-            <li data-transition="fade" data-speed="700" data-prevslidecaption="Prev" data-nextslidecaption="Next"><img src="images/img-145.jpg" alt="" class="rev-slidebg"/>
-              <!-- Layer 1-->
-              <div data-x="left" data-y="center" data-width="['auto']" data-height="['auto']" data-hoffset="['0','130','130','30']" data-voffset="-55" data-fontsize="['14','14','14','14']" data-lineheight="['20','20','20','20']" data-fontweight="['400','400','400','400']" data-color="['#ffffff','#ffffff','#ffffff','#ffffff']" data-transform_in="x:-40px;opacity:0;s:700;e:Power2.easeInOut;" data-transform_out="x:0px;opacity:0;s:700;" data-start="800" class="tp-caption tp-resizeme apo-layer-style-1">When the sun goes down</div>
-              <!-- End of Layer 1-->
-              <!-- Layer 2-->
-              <div data-x="left" data-y="center" data-width="['auto']" data-height="['auto']" data-hoffset="['0','130','130','30']" data-voffset="0" data-fontsize="['60','60','60','40']" data-lineheight="['60','60','60','60']" data-fontweight="['400','400','400','400']" data-color="['#ffffff','#ffffff','#ffffff','#ffffff']" data-transform_in="x:-40px;opacity:0;s:700;e:Power2.easeInOut;" data-transform_out="x:0px;opacity:0;s:700;" data-start="900" class="tp-caption tp-resizeme apo-layer-style-2">The Wild Parachute</div>
-              <!-- End of Layer 2-->
-              <!-- Layer 3-->
-              <div data-x="left" data-y="center" data-width="['auto']" data-height="['auto']" data-hoffset="['0','130','130','30']" data-voffset="80" data-fontsize="['12','12','12','12']" data-lineheight="['18','18','18','18']" data-fontweight="['400','400','400','400']" data-color="['#ffffff','#ffffff','#ffffff','#ffffff']" data-transform_in="x:-40px;opacity:0;s:700;e:Power2.easeInOut;" data-transform_out="x:0px;opacity:0;s:700;" data-start="1000" class="tp-caption tp-resizeme apo-layer-style-3">A photo by Christian Carter in 2016</div>
-              <!-- End of Layer 3-->
-            </li>
-            <!-- End of Slide 1-->
-            <!-- Slide 2-->
-            <li data-transition="fade" data-speed="700" data-prevslidecaption="Prev" data-nextslidecaption="Next"><img src="images/slide-02.jpg" alt=""/>
-              <!-- Layer 1-->
-              <div data-x="right" data-y="center" data-width="['auto']" data-height="['auto']" data-hoffset="['0','30','30','30']" data-voffset="-55" data-fontsize="['14','14','14','14']" data-lineheight="['20','20','20','20']" data-fontweight="['400','400','400','400']" data-color="['#ffffff','#ffffff','#ffffff','#ffffff']" data-transform_in="x:40px;opacity:0;s:700;e:Power2.easeInOut;" data-transform_out="x:0px;opacity:0;s:700;" data-start="800" class="tp-caption tp-resizeme apo-layer-style-1">Experiment With Nature</div>
-              <!-- End of Layer 1-->
-              <!-- Layer 2-->
-              <div data-x="right" data-y="center" data-width="['auto']" data-height="['auto']" data-hoffset="['0','30','30','30']" data-voffset="0" data-fontsize="['60','60','60','40']" data-lineheight="['60','60','60','60']" data-fontweight="['400','400','400','400']" data-color="['#ffffff','#ffffff','#ffffff','#ffffff']" data-transform_in="x:40px;opacity:0;s:700;e:Power2.easeInOut;" data-transform_out="x:0px;opacity:0;s:700;" data-start="900" class="tp-caption tp-resizeme apo-layer-style-2">Calm River</div>
-              <!-- End of Layer 2-->
-              <!-- Layer 3-->
-              <div data-x="right" data-y="center" data-width="['auto']" data-height="['auto']" data-hoffset="['0','30','30','30']" data-voffset="80" data-fontsize="['12','12','12','12']" data-lineheight="['18','18','18','18']" data-fontweight="['400','400','400','400']" data-color="['#ffffff','#ffffff','#ffffff','#ffffff']" data-transform_in="x:40px;opacity:0;s:700;e:Power2.easeInOut;" data-transform_out="x:0px;opacity:0;s:700;" data-start="1000" class="tp-caption tp-resizeme apo-layer-style-3">A photo by Christian Carter in 2016</div>
-              <!-- End of Layer 3-->
-            </li>
-            <!-- End of Slide 2-->
-            <!-- Slide 3-->
-            <li data-transition="fade" data-speed="700" data-prevslidecaption="Prev" data-nextslidecaption="Next"><img src="images/slide-03.jpg" alt=""/>
-              <!-- Layer 1-->
-              <div data-x="left" data-y="center" data-width="['auto']" data-height="['auto']" data-hoffset="['0','130','130','30']" data-voffset="-55" data-fontsize="['14','14','14','14']" data-lineheight="['20','20','20','20']" data-fontweight="['400','400','400','400']" data-color="['#ffffff','#ffffff','#ffffff','#ffffff']" data-transform_in="x:-40px;opacity:0;s:700;e:Power2.easeInOut;" data-transform_out="x:0px;opacity:0;s:700;" data-start="800" class="tp-caption tp-resizeme apo-layer-style-1">Outside the World</div>
-              <!-- End of Layer 1-->
-              <!-- Layer 2-->
-              <div data-x="left" data-y="center" data-width="['auto']" data-height="['auto']" data-hoffset="['0','130','130','30']" data-voffset="0" data-fontsize="['60','60','60','40']" data-lineheight="['60','60','60','60']" data-fontweight="['400','400','400','400']" data-color="['#ffffff','#ffffff','#ffffff','#ffffff']" data-transform_in="x:-40px;opacity:0;s:700;e:Power2.easeInOut;" data-transform_out="x:0px;opacity:0;s:700;" data-start="900" class="tp-caption tp-resizeme apo-layer-style-2">Counting Stars</div>
-              <!-- End of Layer 2-->
-              <!-- Layer 3-->
-              <div data-x="left" data-y="center" data-width="['auto']" data-height="['auto']" data-hoffset="['0','130','130','30']" data-voffset="80" data-fontsize="['12','12','12','12']" data-lineheight="['18','18','18','18']" data-fontweight="['400','400','400','400']" data-color="['#ffffff','#ffffff','#ffffff','#ffffff']" data-transform_in="x:-40px;opacity:0;s:700;e:Power2.easeInOut;" data-transform_out="x:0px;opacity:0;s:700;" data-start="1000" class="tp-caption tp-resizeme apo-layer-style-3">A photo by Christian Carter in 2016</div>
-              <!-- End of Layer 3-->
-            </li>
-            <!-- End of Slide 3-->
-          </ul>
-          <!-- Slider Actions -->
-          <div class="apo-revslider-controls">
-            <div class="apo-revslider-controls-item">
-              <div class="apo-revslider-theme-nav-prev">
-                <div class="apo-revslider-control-title">Prev</div>
-                <i class="apo-icon-prev"></i>
-              </div>
-            </div>
-            <div class="apo-revslider-controls-item">
-              <div class="apo-revslider-theme-nav-next">
-                <div class="apo-revslider-control-title">Next</div>
-                <i class="apo-icon-next"></i>
-              </div>
-            </div>
-          </div>
-          <!-- End Slider Actions -->
+      <!-- <ul class="apo-photo-stream-actions">
+        <li>
+          <button type="button" class="apo-hover-btn"><span class="apo-hover-btn-tooltip">220</span><i class="icon icon-heart"></i></button>
+        </li>
+        <li>
+          <button type="button" data-arctic-modal="modals/modal_photo_info.html" data-arctic-modal-type="ajax" data-photo-title="The Deer" data-photo-meta="A Photo by Christian Carter" data-photo-info="[{&quot;name&quot;: &quot;Made In&quot;, &quot;value&quot;: &quot;August 2015&quot;}, {&quot;name&quot;: &quot;Model&quot;, &quot;value&quot;: &quot;Canon EOS 6D&quot;}, {&quot;name&quot;: &quot;ISO&quot;, &quot;value&quot;: &quot;400&quot;}, {&quot;name&quot;: &quot;Focal Length&quot;, &quot;value&quot;: &quot;14mm&quot;}, {&quot;name&quot;: &quot;Category&quot;, &quot;value&quot;: &quot;Nature, Landscape&quot;}, {&quot;name&quot;: &quot;Aperture&quot;, &quot;value&quot;: &quot;f/4&quot;}, {&quot;name&quot;: &quot;Exposure Time&quot;, &quot;value&quot;: &quot;1/40&quot;}]" class="apo-hover-btn apo-photo-info-invoker"><i class="icon icon-menu-circle"></i></button>
+        </li>
+      </ul> -->
+      <div id="apo-full-page" class="apo-full-page-container apo-photo-stream">
+        <div data-bg-img-src="img/Portrait-5.jpg" class="fp-section"><img src="img/Portrait-5.jpg" alt="" data-photo-title="The Deer" data-photo-meta="Photo For Discovery Channel" data-photo-info="[{&quot;name&quot;: &quot;Made In&quot;, &quot;value&quot;: &quot;August 2015&quot;}, {&quot;name&quot;: &quot;Model&quot;, &quot;value&quot;: &quot;Canon EOS 6D&quot;}, {&quot;name&quot;: &quot;ISO&quot;, &quot;value&quot;: &quot;400&quot;}, {&quot;name&quot;: &quot;Focal Length&quot;, &quot;value&quot;: &quot;14mm&quot;}, {&quot;name&quot;: &quot;Category&quot;, &quot;value&quot;: &quot;Nature, Landscape&quot;}, {&quot;name&quot;: &quot;Aperture&quot;, &quot;value&quot;: &quot;f/4&quot;}, {&quot;name&quot;: &quot;Exposure Time&quot;, &quot;value&quot;: &quot;1/40&quot;}]" class="apo-photo-stream-hidden-img"/>
+          <!-- Content Section-->
+          <section class="apo-section apo-fp-layer">
+            <h2 class="apo-section-title">The Deer</h2><em class="apo-photo-stream-category">Photo For Discovery Channel</em><small class="apo-photo-stream-date">Made In 2016</small>
+          </section>
+          <!-- End Content Section-->
+          <div class="apo-scroll-down-icon"></div>
         </div>
-      </div>
-      <!-- End of Slider-->
-      <!-- Content Section-->
-      <div data-bg-img-src="images/page-bg-img-4.png" class="apo-section apo-fullheight-section">
-        <div class="container">
-          <blockquote class="apo-style-3">
-            <p>I am a highly organised and motivated professional photographer with a wealth of experience in a range of photographic styles and services.</p>
-            <footer><img src="images/painting.png" alt=""/></footer>
-          </blockquote><a href="home_personal_with_left_header.html" class="apo-btn apo-btn-small">Learn More About me</a>
+        <div data-bg-img-src="img/Portrait-14.jpg" class="fp-section"><img src="img/Portrait-14.jpg" alt="" data-photo-title="Winter Sunset" data-photo-meta="Zara Fashion Campaign 2017" data-photo-info="[{&quot;name&quot;: &quot;Made In&quot;, &quot;value&quot;: &quot;August 2015&quot;}, {&quot;name&quot;: &quot;Model&quot;, &quot;value&quot;: &quot;Canon EOS 6D&quot;}, {&quot;name&quot;: &quot;ISO&quot;, &quot;value&quot;: &quot;400&quot;}, {&quot;name&quot;: &quot;Focal Length&quot;, &quot;value&quot;: &quot;14mm&quot;}, {&quot;name&quot;: &quot;Category&quot;, &quot;value&quot;: &quot;Nature, Landscape&quot;}, {&quot;name&quot;: &quot;Aperture&quot;, &quot;value&quot;: &quot;f/4&quot;}, {&quot;name&quot;: &quot;Exposure Time&quot;, &quot;value&quot;: &quot;1/40&quot;}]" class="apo-photo-stream-hidden-img"/>
+          <!-- Content Section-->
+          <section class="apo-section apo-fp-layer">
+            <h2 class="apo-section-title">Winter Sunset</h2><em class="apo-photo-stream-category">Zara Fashion Campaign 2017</em><small class="apo-photo-stream-date">Made In 2016</small><a href="https://www.youtube.com/embed/vlDzYIIOYmM?rel=0&loop=1&playlist=vlDzYIIOYmM" data-fancybox="data-fancybox" class="apo-cta-btn"><i class="fa fa-play"></i></a>
+          </section>
+          <!-- End Content Section-->
         </div>
-      </div>
-      <!-- End Content Section-->
-      <!-- Content Section-->
-      <div class="apo-section apo-section-no-spacing">
-        <!-- Isotope-->
-        <div data-isotope-layout="masonry" class="apo-isotope apo-cols-2 apo-portfolio-container apo-style-5">
-          <div class="grid-sizer"></div>
-          <div class="apo-item apo-photo-retouching">
-            <!-- Article-->
-            <article class="apo-project">
-              <div class="apo-project-media"><a href="#"><img src="images/img-146.jpg" alt=""/></a></div>
-              <div class="apo-project-content-wrap">
-                <div class="apo-aligner-outer">
-                  <div class="apo-aligner-inner">
-                    <header class="apo-project-header">
-                      <ul class="apo-project-categories">
-                        <li><a href="#">Photo Retouching</a></li>
-                      </ul>
-                      <h2 class="apo-project-title"><a href="portfolio_single_post.html">The Bear’s Sadness</a></h2>
-                    </header>
-                  </div>
-                </div>
-              </div><span class="apo-project-triangle"></span>
-            </article>
-          </div>
-          <div class="apo-item apo-gucci-spring-2017-promotion">
-            <!-- Article-->
-            <article class="apo-project">
-              <div class="apo-project-media"><a href="#"><img src="images/img-147.jpg" alt=""/></a></div>
-              <div class="apo-project-content-wrap">
-                <div class="apo-aligner-outer">
-                  <div class="apo-aligner-inner">
-                    <header class="apo-project-header">
-                      <ul class="apo-project-categories">
-                        <li><a href="#">Gucci Spring 2017 Promotion</a></li>
-                      </ul>
-                      <h2 class="apo-project-title"><a href="portfolio_single_post.html">Aborigines Fashion Campaign</a></h2>
-                    </header>
-                  </div>
-                </div>
-              </div><span class="apo-project-triangle"></span>
-            </article>
-          </div>
-          <div class="apo-item apo-close-up-macro">
-            <!-- Article-->
-            <article class="apo-project">
-              <div class="apo-project-media"><a href="#"><img src="images/img-148.jpg" alt=""/></a></div>
-              <div class="apo-project-content-wrap">
-                <div class="apo-aligner-outer">
-                  <div class="apo-aligner-inner">
-                    <header class="apo-project-header">
-                      <ul class="apo-project-categories">
-                        <li><a href="#">Close up &amp; Macro</a></li>
-                      </ul>
-                      <h2 class="apo-project-title"><a href="portfolio_single_post.html">Vitality</a></h2>
-                    </header>
-                  </div>
-                </div>
-              </div><span class="apo-project-triangle"></span>
-            </article>
-          </div>
-          <div class="apo-item apo-landscape">
-            <!-- Article-->
-            <article class="apo-project">
-              <div class="apo-project-media"><a href="#"><img src="images/img-149.jpg" alt=""/></a></div>
-              <div class="apo-project-content-wrap">
-                <div class="apo-aligner-outer">
-                  <div class="apo-aligner-inner">
-                    <header class="apo-project-header">
-                      <ul class="apo-project-categories">
-                        <li><a href="#">Landscape</a></li>
-                      </ul>
-                      <h2 class="apo-project-title"><a href="portfolio_single_post.html">Before The Storm</a></h2>
-                    </header>
-                  </div>
-                </div>
-              </div><span class="apo-project-triangle"></span>
-            </article>
-          </div>
+        <div data-bg-img-src="img/Portrait-67.jpg" class="fp-section"><img src="img/Portrait-67.jpg" alt="" data-photo-title="Over The Sky" data-photo-meta="Flycam Review" data-photo-info="[{&quot;name&quot;: &quot;Made In&quot;, &quot;value&quot;: &quot;August 2015&quot;}, {&quot;name&quot;: &quot;Model&quot;, &quot;value&quot;: &quot;Canon EOS 6D&quot;}, {&quot;name&quot;: &quot;ISO&quot;, &quot;value&quot;: &quot;400&quot;}, {&quot;name&quot;: &quot;Focal Length&quot;, &quot;value&quot;: &quot;14mm&quot;}, {&quot;name&quot;: &quot;Category&quot;, &quot;value&quot;: &quot;Nature, Landscape&quot;}, {&quot;name&quot;: &quot;Aperture&quot;, &quot;value&quot;: &quot;f/4&quot;}, {&quot;name&quot;: &quot;Exposure Time&quot;, &quot;value&quot;: &quot;1/40&quot;}]" class="apo-photo-stream-hidden-img"/>
+          <!-- Content Section-->
+          <section class="apo-section apo-fp-layer">
+            <h2 class="apo-section-title">Over The Sky</h2><em class="apo-photo-stream-category">Flycam Review</em><small class="apo-photo-stream-date">Made In 2016</small>
+            <!-- <footer class="apo-photo-stream-footer"><a href="#" class="apo-btn apo-btn-small">Link to Other Page</a></footer> -->
+          </section>
+          <!-- End Content Section-->
         </div>
-      </div>
-      <!-- End Isotope-->
-      <!-- Content Section-->
-      <div data-parallax="scroll" data-image-src="images/page-bg-img-5.png" class="apo-section apo-fullheight-section apo-section-parallax">
-        <div class="container"><img src="images/logo-dark-large.png" alt="" class="apo-content-logo"/>
-          <h6 class="apo-section-title apo-style-3">I have a simple mission</h6>
-          <blockquote class="apo-style-3">
-            <p>To produce the highest quality work for every<br/>client, on every project</p>
-          </blockquote>
+        <div data-bg-img-src="img/Portrait-35.jpg" class="fp-section"><img src="img/Portrait-35.jpg" alt="" data-photo-title="Waterfall" data-photo-meta="Experiment with Nature" data-photo-info="[{&quot;name&quot;: &quot;Made In&quot;, &quot;value&quot;: &quot;August 2015&quot;}, {&quot;name&quot;: &quot;Model&quot;, &quot;value&quot;: &quot;Canon EOS 6D&quot;}, {&quot;name&quot;: &quot;ISO&quot;, &quot;value&quot;: &quot;400&quot;}, {&quot;name&quot;: &quot;Focal Length&quot;, &quot;value&quot;: &quot;14mm&quot;}, {&quot;name&quot;: &quot;Category&quot;, &quot;value&quot;: &quot;Nature, Landscape&quot;}, {&quot;name&quot;: &quot;Aperture&quot;, &quot;value&quot;: &quot;f/4&quot;}, {&quot;name&quot;: &quot;Exposure Time&quot;, &quot;value&quot;: &quot;1/40&quot;}]" class="apo-photo-stream-hidden-img"/>
+          <!-- Content Section-->
+          <section class="apo-section apo-fp-layer">
+            <h2 class="apo-section-title">Waterfall</h2><em class="apo-photo-stream-category">Experiment with Nature</em><small class="apo-photo-stream-date">Made In 2016</small>
+          </section>
+          <!-- End Content Section-->
         </div>
-      </div>
-      <!-- End Content Section-->
-      <!-- Content Section-->
-      <div class="apo-section apo-section-no-spacing">
-        <!-- Isotope-->
-        <div data-isotope-layout="grid" class="apo-isotope apo-cols-2 apo-entries-container apo-style-5 apo-same-height-container">
-          <div class="grid-sizer"></div>
-          <div class="apo-item apo-motivation">
-            <!-- Article-->
-            <article class="apo-entry">
-              <div data-bg-img-src="images/img-151.jpg" class="apo-entry-media"></div>
-              <div class="apo-entry-content-wrap">
-                <div class="apo-aligner-outer">
-                  <div class="apo-aligner-inner apo-same-height">
-                    <header class="apo-entry-header">
-                      <h2 class="apo-entry-title"><a href="#">Wine Tours La Dolce Vita</a></h2>
-                      <div class="apo-entry-meta">
-                        <time datetime="2016-12-24" class="apo-entry-publish-date">24 December, 2016</time>
-                      </div>
-                    </header>
-                    <footer class="apo-entry-footer"><a href="#" class="apo-entry-read-more-link apo-btn apo-btn-small"> Read More</a></footer>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!-- End Article-->
-          </div>
-          <div class="apo-item apo-motivation">
-            <!-- Article-->
-            <article class="apo-entry">
-              <div data-bg-img-src="images/img-150.jpg" class="apo-entry-media"></div>
-              <div class="apo-entry-content-wrap">
-                <div class="apo-aligner-outer">
-                  <div class="apo-aligner-inner apo-same-height">
-                    <header class="apo-entry-header">
-                      <h2 class="apo-entry-title"><a href="#">Family Safari Vacation To The Home Of The Gods</a></h2>
-                      <div class="apo-entry-meta">
-                        <time datetime="2016-12-24" class="apo-entry-publish-date">24 December, 2016</time>
-                      </div>
-                    </header>
-                    <footer class="apo-entry-footer"><a href="#" class="apo-entry-read-more-link apo-btn apo-btn-small"> Read More</a></footer>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!-- End Article-->
-          </div>
+        <div data-bg-img-src="img/Portrait-43.jpg" class="fp-section"><img src="images/img-141.jpg" alt="" data-photo-title="The Wild Parachute" data-photo-meta="When the Sun Goes Down" data-photo-info="[{&quot;name&quot;: &quot;Made In&quot;, &quot;value&quot;: &quot;August 2015&quot;}, {&quot;name&quot;: &quot;Model&quot;, &quot;value&quot;: &quot;Canon EOS 6D&quot;}, {&quot;name&quot;: &quot;ISO&quot;, &quot;value&quot;: &quot;400&quot;}, {&quot;name&quot;: &quot;Focal Length&quot;, &quot;value&quot;: &quot;14mm&quot;}, {&quot;name&quot;: &quot;Category&quot;, &quot;value&quot;: &quot;Nature, Landscape&quot;}, {&quot;name&quot;: &quot;Aperture&quot;, &quot;value&quot;: &quot;f/4&quot;}, {&quot;name&quot;: &quot;Exposure Time&quot;, &quot;value&quot;: &quot;1/40&quot;}]" class="apo-photo-stream-hidden-img"/>
+          <!-- Content Section-->
+          <section class="apo-section apo-fp-layer">
+            <h2 class="apo-section-title">The Wild Parachute</h2><em class="apo-photo-stream-category">When the Sun Goes Down</em><small class="apo-photo-stream-date">Made In 2016</small>
+            <!-- <footer class="apo-photo-stream-footer"><a href="#" class="apo-btn apo-btn-small">Link to Other Page</a></footer> -->
+          </section>
+          <!-- End Content Section-->
         </div>
-        <!-- End Isotope-->
       </div>
     </div>
     <!-- End Page Content-->
     <!-- Footer-->
-    <footer id="footer" data-bg-img-src="images/footer_bg.png" class="apo-footer">
-      <div class="container">
-        <div class="apo-widget-area apo-cols-4">
-          <!-- Widget-->
-          <section class="apo-widget apo-widget-size-1_7x apo-contact-info-widget">
-            <h2 class="apo-widget-title">Say hi!</h2>
-            <ul class="apo-contact-info">
-              <li><a href="mailto:#">contact@yourwebsite.com</a></li>
-              <li><a href="tel:#">+533 4929 295</a></li>
-            </ul>
-            <p>Copyright © 2017 Apolo. Designed by Ezwa Studio.</p>
-          </section>
-          <!-- End Widget-->
-          <!-- Widget-->
-          <section class="apo-widget apo-widget-size-0_65x">
-            <h2 class="apo-widget-title">Navigation</h2>
-            <ul>
-              <li> <a href="#">Home</a></li>
-              <li> <a href="#">Pages</a></li>
-              <li> <a href="#">Portfolio</a></li>
-              <li> <a href="#">Blog</a></li>
-              <li> <a href="#">Contact</a></li>
-            </ul>
-          </section>
-          <!-- End Widget-->
-          <!-- Widget-->
-          <section class="apo-widget apo-widget-size-0_65x">
-            <h2 class="apo-widget-title">Information</h2>
-            <ul>
-              <li> <a href="#">Privacy Policy</a></li>
-              <li> <a href="#">Terms of Use</a></li>
-              <li> <a href="#">Legal</a></li>
-              <li> <a href="#">Sitemap</a></li>
-            </ul>
-          </section>
-          <!-- End Widget-->
-          <!-- Widget-->
-          <section class="apo-widget">
-            <h2 class="apo-widget-title">Subscribe Newsletter</h2>
-            <form class="apo-oneline-form apo-newsletter-form">
-              <input type="email" name="email" placeholder="Email Address"/>
-              <button type="submit"><i class="icon icon-arrow-right"></i></button>
-            </form>
-            <ul class="apo-hr-dotted-list">
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Instagram</a></li>
-            </ul>
-          </section>
-          <!-- End Widget-->
-        </div>
-      </div>
-    </footer>
     <!-- End Footer-->
+    <!-- Modal Window-->
+    <!-- <div class="apo-d-none">
+      <div id="modal-nav" class="apo-modal apo-modal-fullscreen-nav">
+        <div class="container">
+          <div class="apo-section">
+            <div class="apo-grid apo-cols-4">
+              <section class="apo-grid-col">
+                <h5 class="apo-fullscreen-nav-title">Home</h5>
+                <ul class="apo-fullscreen-nav-pages">
+                  <li><a href="index.html">Main With Left White Header</a></li>
+                  <li><a href="home_striped.html">Striped Page With Top Transparent Header</a></li>
+                  <li><a href="home_slider_with_left_dark_header.html">Slider With Left Dark Header</a></li>
+                  <li><a href="home_slider_with_bottom_dark_header.html">Slider With Bottom Dark Header</a></li>
+                  <li class="apo-active"><a href="home_full_page_scroll_with_top_transparent_header.html">Full Page Scroll With Top Transparent Header</a></li>
+                  <li><a href="home_personal.html">Personal With Left White Header</a></li>
+                  <li><a href="portfolio_grid_with_top_white_header.html">Grid Portfolio With Top White Header</a></li>
+                  <li><a href="portfolio_masonry_with_top_dark_header.html">Masonry Portfolio With Top Dark Header</a></li>
+                </ul>
+              </section>
+              <section class="apo-grid-col">
+                <h5 class="apo-fullscreen-nav-title">Pages</h5>
+                <ul class="apo-fullscreen-nav-pages">
+                  <li><a href="pages_about_us.html">About Us</a></li>
+                  <li><a href="pages_about_me.html">About Me</a></li>
+                  <li><a href="pages_contact.html">Contact</a></li>
+                  <li><a href="extra_elements.html">Elements</a></li>
+                  <li><a href="typography.html">Typography</a></li>
+                  <li><a href="RTL/index.html">RTL Version</a></li>
+                </ul>
+              </section>
+              <section class="apo-grid-col">
+                <h5 class="apo-fullscreen-nav-title">Portfolio</h5>
+                <ul class="apo-fullscreen-nav-pages">
+                  <li><a href="portfolio_masonry_fit_width_4_columns.html">Masonry Fit Width 4 Columns</a></li>
+                  <li><a href="portfolio_masonry_fit_width_3_columns.html">Masonry Fit Width 3 Columns</a></li>
+                  <li><a href="portfolio_classic_sortable_4_columns.html">Classic Sortable 4 Columns</a></li>
+                  <li><a href="portfolio_single_post.html">Single Portfolio Post</a></li>
+                </ul>
+              </section>
+              <section class="apo-grid-col">
+                <h5 class="apo-fullscreen-nav-title">Blog</h5>
+                <ul class="apo-fullscreen-nav-pages">
+                  <li><a href="blog_classic_sortable_3_columns.html">Classic Sortable 3 Columns</a></li>
+                  <li><a href="blog_classic_2_columns_with_sidebar.html">Classic 2 Columns With Sidebar</a></li>
+                  <li><a href="blog_grid_2_columns.html">Grid 2 Columns</a></li>
+                  <li><a href="blog_element_sizing_4_columns.html">Element Sizing 4 Columns</a></li>
+                  <li><a href="blog_fit_width_4_columns.html">Fit Width 4 Columns</a></li>
+                  <li><a href="blog_single_post.html">Single Blog Post</a></li>
+                  <li><a href="blog_single_post_with_sidebar.html">Single Blog Post With Sidebar</a></li>
+                </ul>
+              </section>
+            </div>
+
+            <form class="apo-oneline-form">
+                    <input type="search" name="s" placeholder="Search this website"/>
+                    <button type="submit"><i class="icon icon-magnifier"></i></button>
+                  </form>
+          </div>
+        </div>
+          <div class="arctic-modal-close-container"><button type="button" class="apo-close-btn arcticmodal-close"><i class="icon icon-cross"></i> Close</button></div>
+      </div>
+    </div> -->
+    <!-- End Modal Window-->
     <!-- Vendor JS-->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="vendors/handlebars-v4.0.5.js"></script>
@@ -481,16 +228,15 @@
     <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
     <script src="vendors/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="vendors/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
-    <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="vendors/swiper/swiper.min.js"></script>
-    <script src="vendors/parallax.min.js"></script>
+    <script src="vendors/fullpage/vendors/scrolloverflow.min.js"></script>
+    <script src="vendors/fullpage/jquery.fullpage.min.js"></script>
     <!-- Theme JS-->
     <script src="js/apolo.core.js"></script>
     <script src="js/modules/apolo.newsletter.js"></script>
     <script src="js/modules/apolo.sameheight.js"></script>
     <script src="js/modules/apolo.appear.js"></script>
     <script src="js/modules/apolo.isotope.js"></script>
+    <script src="js/modules/apolo.fullpage.js"></script>
     <script src="js/apolo.init.js"></script>
   </body>
 </html>

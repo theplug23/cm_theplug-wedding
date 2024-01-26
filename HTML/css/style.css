@@ -233,7 +233,7 @@ fieldset, legend, label, select, input, textarea, form, button, optgroup {
 }
 
 .apo-page-dark-skin a, .apo-striped-photo a, .apo-team-member-name a, .apo-footer .apo-contact-info-widget a, .apo-entries-container.apo-style-1 .apo-entry a:not(.apo-btn), .apo-entries-container.apo-style-4 .apo-entry:hover a:not(.apo-btn), .apo-portfolio-container.apo-style-2 .apo-project a, .apo-portfolio-container.apo-style-3 .apo-project a, .apo-portfolio-container.apo-style-4 .apo-project a, .apo-portfolio-container.apo-style-5 .apo-project-categories a, .apo-portfolio-container.apo-style-6 .apo-project-title a, .apo-portfolio-container.apo-style-6 .apo-project-categories a, .apo-footer.apo-style-2 a {
-  background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, var(--first-color) 0%, var(--first-color) 100%);
 }
 
 a, .apo-pagination > li > a, .apo-pagination .current, .apo-filter a, .apo-filter a.apo-active, .apo-full-page-controls .apo-language, .apo-widget-area a, .apo-entry-tags a, .apo-entries-container.apo-style-2 .apo-entry a:not(.apo-btn), .apo-entries-container.apo-style-3 .apo-entry a:not(.apo-btn), .apo-entries-container.apo-style-4 .apo-entry a:not(.apo-btn), .apo-entry.apo-single .apo-entry-meta a, .comments-list .reply, .apo-contact-section-body .apo-contact-info a, .apo-contact-section-footer a {
@@ -580,7 +580,7 @@ body {
 
 .apo-page-dark-skin a:hover,
 .apo-page-dark-skin a:focus {
-  color: #fff;
+  color: var(--first-color);
 }
 
 .apo-page-dark-skin ::-webkit-selection {
@@ -1593,7 +1593,7 @@ blockquote:not(:last-child) {
 .apo-page-dark-skin .apo-hidden-column:not(.apo-hidden-column-dark) .apo-social-networks a:focus,
 .apo-page-dark-skin .apo-header-light .apo-social-networks a:hover,
 .apo-page-dark-skin .apo-header-light .apo-social-networks a:focus {
-    color: #000000;
+    color: var(--first-color);
 }
 
 .apo-header-dark, .apo-header-transparent {
@@ -1621,15 +1621,15 @@ blockquote:not(:last-child) {
 .apo-header-transparent .apo-navigation > .apo-selected > a,
 .apo-header-transparent .apo-navigation > .apo-current > a,
 .apo-header-transparent .apo-navigation > .current-menu-item > a {
-  color: #fff;
+  color: var(--first-color);
 }
 
 .apo-header-dark .apo-navigation > li > a::after, .apo-header-transparent .apo-navigation > li > a::after {
-  background-color: #fff;
+  background-color: var(--first-color);
 }
 
-.apo-header-dark .apo-mobile-nav-btn, .apo-header-transparent .apo-mobile-nav-btn {
-  color: #fff;
+.apo-header-dark .apo-mobile-nav-btn, .apo-header-transparent .apo-mobile-nav-btn{
+  color: var(--first-color);
 }
 
 .apo-header-dark.apo-header-vertical {
@@ -1638,7 +1638,7 @@ blockquote:not(:last-child) {
 
 .apo-header-dark .apo-header-section {
   color: var(--tirth-color);
-  background-color: var(--first-color);
+  background-color: var(--second-color);
 }
 
 .apo-header-dark .apo-navigation > li > a {
@@ -1794,7 +1794,7 @@ blockquote:not(:last-child) {
   font-size: 12px;
   line-height: 18px;
   font-weight: 700;
-  color: #a9aaae;
+  color: var(--tirth-color);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   display: block;
@@ -1822,7 +1822,7 @@ blockquote:not(:last-child) {
 .apo-navigation > .apo-selected > a,
 .apo-navigation > .apo-current > a,
 .apo-navigation > .current-menu-item > a {
-  color: #3e3d4a;
+  color: var(--first-color);
 }
 
 .apo-navigation > li:hover > a::after,
@@ -2071,7 +2071,7 @@ blockquote:not(:last-child) {
 
 .apo-fullscreen-nav-pages .apo-active > a,
 .apo-fullscreen-nav-pages a:hover, .apo-fullscreen-nav-pages a:focus {
-  color: #fff;
+  color: var(--first-color);
 }
 
 /* ------------------------------------------------------
@@ -2165,12 +2165,13 @@ body.apo-header-vertical-right .apo-header.apo-header-vertical {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   line-height: 18px;
-  font-weight: 300;
+  font-weight: 600;
   white-space: nowrap;
   letter-spacing: 5px;
   text-transform: uppercase;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
+          color: var(--first-color);
 }
 
 .apo-header-vertical .apo-header-button {
@@ -2377,11 +2378,11 @@ body.apo-header-vertical-right .apo-header.apo-header-vertical {
 }
 
 .apo-hidden-column .apo-close-btn {
-  color: #a9aaae;
+  color: var(--tirth-color);
 }
 
 .apo-hidden-column .apo-close-btn:hover {
-  color: #000;
+  color: var(--first-color);
 }
 
 .apo-hidden-column-dark .apo-close-btn:hover {
@@ -3004,7 +3005,7 @@ textarea:not([rows]) {
 }
 
 .apo-page-dark-skin .apo-moved-label-border {
-  border-bottom-color: #fff;
+  border-bottom-color: var(--first-color);
 }
 
 .apo-page-dark-skin .apo-moved-label input[type="text"]:focus ~ label,
@@ -3020,7 +3021,7 @@ textarea:not([rows]) {
 .apo-page-dark-skin .apo-moved-label input[type="time"]:focus ~ label,
 .apo-page-dark-skin .apo-moved-label input[type="week"]:focus ~ label,
 .apo-page-dark-skin .apo-moved-label textarea:focus ~ label {
-  color: #fff;
+  color: var(--first-color);
 }
 
 /* ------------------------------------------------------
@@ -3057,7 +3058,7 @@ textarea:not([rows]) {
   display: block;
   width: 3px;
   height: 3px;
-  background-color: #a8a8a8;
+  background-color: var(--tirth-color);
   border-radius: 50%;
   position: absolute;
   right: 0;
@@ -3434,6 +3435,11 @@ textarea:not([rows]) {
 .apo-btn-white:hover,
 .apo-btn-white:focus {
   color: #ffffff;
+}
+
+.apo-btn-white{
+  background-color: var(--first-color);
+  padding: 16px;
 }
 
 .apo-btn-mini {
@@ -4006,7 +4012,7 @@ hr:not(:last-child) {
   bottom: 0;
   left: 50%;
   margin-left: -2px;
-  background-color: #fff;
+  background-color: var(--first-color);
   opacity: 0;
   transition: opacity .5s ease;
 }
@@ -4017,7 +4023,11 @@ hr:not(:last-child) {
 }
 
 .apo-page-dark-skin .apo-social-networks > li > a {
-  color: #fff;
+  color: var(--second-color);
+}
+
+.apo-page-dark-skin .apo-social-networks > li > a:hover{
+  color: var(--first-color);
 }
 
 .apo-named-element-container .apo-social-networks {
@@ -5448,7 +5458,7 @@ table {
 }
 
 .apo-footer .apo-contact-info-widget a {
-  color: #ffffff;
+  color: var(--tirth-color);
   background-position: 0 33px;
 }
 
@@ -7662,6 +7672,7 @@ table {
 
 .apo-modal .arcticmodal-close:hover, .apo-modal .arcticmodal-close:focus {
   opacity: 1;
+  color: var(--first-color);
 }
 
 .apo-modal .apo-oneline-form input[type="text"],
@@ -7748,8 +7759,8 @@ table {
     13. Footer
 ------------------------------------------------------ */
 .apo-footer {
-  color: #8a8a8a;
-  background-color: var(--fourth-color);
+  color: var(--tirth-color);
+  background-color: var(--first-color);
   padding: 85px 0;
 }
 
@@ -7765,7 +7776,7 @@ table {
 }
 
 .apo-footer a {
-  color: #8a8a8a;
+  color: var(--tirth-color);
 }
 
 .apo-footer a:hover,
@@ -7774,7 +7785,7 @@ table {
 }
 
 .apo-footer .apo-widget-title {
-  color: #fff;
+  color: var(--tirth-color);
   font-weight: 600;
   letter-spacing: 1.5px;
 }
