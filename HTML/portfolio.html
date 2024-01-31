@@ -1,6 +1,59 @@
 <!doctype html>
 <html lang="fr">
   <head>
+    <style>
+      .carousel {
+        position: relative;
+      }
+
+      .carousel-prev,
+      .carousel-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 9999;
+      }
+
+      .carousel .modal .carousel-prev {
+        left: 80px;
+      }
+
+      .carousel .modal .carousel-next {
+        right: 80px;
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        text-align: center;
+        z-index: 9999;
+      }
+
+      .modal img {
+        border-radius: 10px;
+        cursor: pointer;
+        max-width: 80%;
+        max-height: 60%;
+        margin-top: 10%;
+      }
+
+      .modal a {
+        font-size: 40px;
+        color: #fff;
+      }
+
+      .modal a:hover {
+        cursor: pointer;
+      }
+    </style>
     <!-- Basic page needs-->
     <title>PORTFOLIO</title>
     <meta charset="UTF-8"/>
@@ -118,7 +171,7 @@
         <div class="apo-header-component-middle">
           <div class="apo-header-items">
             <div class="apo-header-item">
-              <h1 class="apo-page-title">THEPLUG-WEDDING-CM</h1>
+              <h1 class="apo-page-title">THEPLUG WEDDING CAMEROUN</h1>
             </div>
           </div>
         </div>
@@ -141,7 +194,15 @@
     <div class="apo-page">
       <!-- Parallax Grid -->
       <div class="apo-parallax-grid apo-portfolio-container apo-style-2 apo-portfolio-appear" data-columns-sm="2" data-columns-md="3" data-columns-lg="4">
+         <div class="carousel">
+            <div class="modal">
+              <a class="carousel-prev">&#10094;</a>
+              <img src="" alt="Image en taille réelle">
+              <a class="carousel-next">&#10095;</a>
+            </div>
+          </div>
         <div class="apo-parallax-grid-item">
+         
           <!-- Article-->
           <article class="apo-project">
             <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-73.jpg" alt=""/></a></div>
@@ -421,6 +482,48 @@
            
           </article>
         </div>
+        <div class="apo-parallax-grid-item">
+          <!-- Article-->
+          <article class="apo-project">
+            <div class="apo-project-media"><a href="#"><img src="img/Portrait-4.jpg" alt=""/></a></div>
+           
+          </article>
+        </div>
+        <div class="apo-parallax-grid-item">
+          <!-- Article-->
+          <article class="apo-project">
+            <div class="apo-project-media"><a href="#"><img src="img/Portrait-14.jpg" alt=""/></a></div>
+           
+          </article>
+        </div>
+        <div class="apo-parallax-grid-item">
+          <!-- Article-->
+          <article class="apo-project">
+            <div class="apo-project-media"><a href="#"><img src="img/Portrait-35.jpg" alt=""/></a></div>
+           
+          </article>
+        </div>
+        <div class="apo-parallax-grid-item">
+          <!-- Article-->
+          <article class="apo-project">
+            <div class="apo-project-media"><a href="#"><img src="img/Portrait-42.jpg" alt=""/></a></div>
+           
+          </article>
+        </div>
+        <div class="apo-parallax-grid-item">
+          <!-- Article-->
+          <article class="apo-project">
+            <div class="apo-project-media"><a href="#"><img src="img/Portrait-43.jpg" alt=""/></a></div>
+           
+          </article>
+        </div>
+        <div class="apo-parallax-grid-item">
+          <!-- Article-->
+          <article class="apo-project">
+            <div class="apo-project-media"><a href="#"><img src="img/Portrait-67.jpg" alt=""/></a></div>
+           
+          </article>
+        </div>
       </div>
       <!-- End Parallax Grid -->
     </div>
@@ -534,6 +637,65 @@
       imageElements.forEach((img, index) => {
         img.src = shuffledSources[index];
       });
+
+
+      var images = document.querySelectorAll(".apo-parallax-grid-item img");
+      var modal = document.querySelector(".modal");
+      var modalImage = modal.querySelector("img");
+      var carouselPrev = document.querySelector(".carousel-prev");
+      var carouselNext = document.querySelector(".carousel-next");
+      var currentImageIndex = 0;
+
+      function showImage(index) {
+        var imageSrc = images[index].getAttribute("src");
+        modalImage.src = imageSrc;
+        modal.style.display = "block";
+      }
+
+      function hideModal() {
+        modal.style.display = "none";
+      }
+
+      function showPrevImage(event) {
+        event.stopPropagation();
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        showImage(currentImageIndex);
+      }
+
+      function showNextImage(event) {
+        event.stopPropagation();
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        showImage(currentImageIndex);
+      }
+
+      // Fonction pour gérer les événements de pression sur le clavier
+      function handleKeyPress(event) {
+        if (event.keyCode === 37) { // Touche "flèche gauche"
+          showPrevImage(event);
+        } else if (event.keyCode === 39) { // Touche "flèche droite"
+          showNextImage(event);
+        } else if (event.keyCode === 27) { // Touche "Esc"
+          hideModal();
+        }
+      }
+
+      // Gestionnaire d'événement pour les clics sur les flèches de navigation
+      carouselPrev.addEventListener("click", showPrevImage);
+      carouselNext.addEventListener("click", showNextImage);
+
+      // Gestionnaire d'événement pour les touches du clavier
+      document.addEventListener("keydown", handleKeyPress);
+
+      // Parcourir les éléments d'image et ajouter les gestionnaires d'événements pour afficher les modales
+      images.forEach(function(image, index) {
+        image.addEventListener("click", function() {
+          currentImageIndex = index;
+          showImage(currentImageIndex);
+        });
+      });
+
+      // Gestionnaire d'événement pour cacher la modale en cliquant à l'extérieur de celle-ci
+      modal.addEventListener("click", hideModal);
     </script>
   </body>
 </html>
