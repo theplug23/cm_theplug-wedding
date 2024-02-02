@@ -2482,10 +2482,26 @@ body.apo-header-vertical-right .apo-header.apo-header-vertical {
     6. Page Header
 ------------------------------------------------------ */
 .apo-page-header {
+  position: relative; /* Ajoutez cette ligne pour positionner les éléments de manière relative */
   padding: 95px 0 90px;
   display: table;
   width: 100%;
   table-layout: fixed;
+  height: 800px;
+}
+
+.apo-page-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./../Perso/Photo-12.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.7;
 }
 
 .apo-page-header-column {
@@ -2515,6 +2531,13 @@ body.apo-header-vertical-right .apo-header.apo-header-vertical {
 
 .apo-page-title {
   font-family: "Unna", sans-serif;
+  color: var(--tirth-color);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  position: absolute;
+  width: 100%;
 }
 
 .apo-page-header.apo-style-2 .apo-page-title {
@@ -8214,7 +8237,7 @@ table {
     background-position: 0 26px;
   }
   .apo-page-header {
-    display: block;
+    display: none;
   }
   .apo-page-header,
   .apo-page-controls,
