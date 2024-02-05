@@ -2497,7 +2497,7 @@ body.apo-header-vertical-right .apo-header.apo-header-vertical {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(./../Perso/Photo-12.jpg);
+  background-image: url(./../Perso/Photo-11.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -2529,7 +2529,7 @@ body.apo-header-vertical-right .apo-header.apo-header-vertical {
   padding-right: 0;
 }
 
-.apo-page-title {
+.apo-page > .apa-page-header > .apo-page-header-column > .apo-page-title {
   font-family: "Unna", sans-serif;
   color: var(--tirth-color);
   top: 0;
