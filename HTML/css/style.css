@@ -2482,7 +2482,7 @@ body.apo-header-vertical-right .apo-header.apo-header-vertical {
     6. Page Header
 ------------------------------------------------------ */
 .apo-page-header {
-  position: relative; /* Ajoutez cette ligne pour positionner les éléments de manière relative */
+  position: relative;
   padding: 95px 0 90px;
   display: table;
   width: 100%;
@@ -2497,9 +2497,10 @@ body.apo-header-vertical-right .apo-header.apo-header-vertical {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(./../Perso/TEAM-GOOD.jpg);
-  background-size: contain;
+  background-image: url(./../Perso/Photo-11.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   z-index: -1;
   opacity: 0.7;
 }
@@ -2529,7 +2530,7 @@ body.apo-header-vertical-right .apo-header.apo-header-vertical {
   padding-right: 0;
 }
 
-.apo-page > .apa-page-header > .apo-page-header-column > .apo-page-title {
+.apo-page-header-column > .apo-page-title {
   font-family: "Unna", sans-serif;
   color: var(--tirth-color);
   top: 0;
@@ -8237,7 +8238,7 @@ table {
     background-position: 0 26px;
   }
   .apo-page-header {
-    display: none;
+    display: block;
   }
   .apo-page-header,
   .apo-page-controls,
