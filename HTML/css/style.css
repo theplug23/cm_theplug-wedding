@@ -3911,6 +3911,15 @@ hr:not(:last-child) {
   overflow: hidden;
 }
 
+.container .backtotop {
+  margin-top: 20px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 100px;
+  right: 40px;
+  z-index: 1;
+}
+
 .apo-team-member .apo-social-networks a {
   color: #fff;
 }

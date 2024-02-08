@@ -1354,9 +1354,6 @@ body.apo-header-vertical-right .apo-header.apo-header-vertical {
   .apo-fp-photo-stream #fp-nav.right {
     margin-left: 0px;
   }
-  .apo-contact-info-section .apo-contact-info a {
-    background-position: 100% 29px;
-  }
   .apo-fp-photo-stream #fp-nav.left {
     margin-right: 0px;
   }
@@ -1366,6 +1363,9 @@ body.apo-header-vertical-right .apo-header.apo-header-vertical {
   }
   .apo-has-full-page-controls .apo-full-page-container .container {
     padding-left: 20px;
+  }
+  .apo-contact-info-section .apo-contact-info a {
+    background-position: 100% 29px;
   }
   .apo-page-header-column:first-child:not(:only-child),
   .apo-page-header-column:last-child:not(:only-child) {

@@ -76,7 +76,7 @@
 				}
 			],
 			onIncorrect: function(errorsList){
-				
+				var previousMessage = $(form).siblings('.apo-alert-box-error');
 
 				$.Apolo.modules.alertMessage({
 					target: self.form,
