@@ -1,3 +1,4 @@
+# On autorise de renommer les pages
 RewriteEngine On
 
 # Masquer l'extension .html des URL
