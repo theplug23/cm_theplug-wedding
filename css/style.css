@@ -252,22 +252,37 @@ a, .apo-pagination > li > a, .apo-pagination .current, .apo-filter a, .apo-filte
 /* ------------------------------------------------------
   1. Global
 ------------------------------------------------------ */
+@font-face {
+  font-family: "made-tommy-medium";
+  src: url('./../fonts/made-tommy-medium_personal-use.otf');
+  font-style: normal;
+  font-weight: normal;
+
+}
+@font-face {
+  font-family: "made-tommy-light";
+  src: url('./../fonts/made-tommy-light-personal-use.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
 html {
   overflow-x: hidden;
 }
 
 :root {
-  --first-color: #b89339;
+  --first-color: #8C5F66;
   --second-color: #fff;
   --tirth-color: #000;
-  --fourth-color: #f8f4eb;
+  --fourth-color: #F3E5CC;
+  --fith-color: #C08584;
 }
 
 body {
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: "made-toomy-medium"; */
   color: #000;
   background-color: #f5f5f5;
   overflow-x: hidden !important;
@@ -336,8 +351,8 @@ body {
 
 .apo-loader {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   line-height: 100px;
   border-radius: 50%;
   -webkit-animation: apoBorderPulse 1s ease .0s infinite;
@@ -353,7 +368,7 @@ body {
     box-shadow: 0 0 0 0 #333333;
   }
   100% {
-    box-shadow: 0 0 0 20px rgba(51, 51, 51, 0);
+    box-shadow: 0 0 0 40px rgba(51, 51, 51, 0);
   }
 }
 
@@ -362,7 +377,7 @@ body {
     box-shadow: 0 0 0 0 #333333;
   }
   100% {
-    box-shadow: 0 0 0 20px rgba(51, 51, 51, 0);
+    box-shadow: 0 0 0 40px rgba(51, 51, 51, 0);
   }
 }
 
@@ -1152,7 +1167,7 @@ a img.aligncenter {
     4. Typography
 ------------------------------------------------------ */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Abril Fatface', sans-serif;
+  font-family: "made-tommy-medium";
   font-weight: 400;
   line-height: 1em;
   margin-top: 0;
@@ -1220,11 +1235,12 @@ a:focus {
 }
 
 .apo-section-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "made-tommy-medium";
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  color: var(--tirth-color);
 }
 
 .apo-section-title.apo-style-2, .apo-section-title.apo-style-3 {
@@ -1248,7 +1264,7 @@ a:focus {
 }
 
 .apo-section-sub-title {
-  font-family: "Unna", sans-serif;
+  font-family: "made-tommy-light";
   font-size: 24px;
   line-height: 36px;
   font-weight: 400;
@@ -1776,6 +1792,7 @@ blockquote:not(:last-child) {
 .apo-navigation-container {
   display: inline-block;
   text-align: initial;
+  font-family: "made-tommy-light";
 }
 
 .apo-navigation {
@@ -2437,7 +2454,7 @@ body.apo-header-vertical-right .apo-header.apo-header-vertical {
 }
 
 .apo-hidden-column .apo-navigation > li > a {
-  font-family: "Unna", sans-serif;
+  font-family: "made-tommy-light";
   font-size: 48px;
   line-height: 1em;
   font-weight: 400;
@@ -2502,7 +2519,6 @@ body.apo-header-vertical-right .apo-header.apo-header-vertical {
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
-  opacity: 0.7;
 }
 
 .apo-page-header-column {
@@ -2531,7 +2547,7 @@ body.apo-header-vertical-right .apo-header.apo-header-vertical {
 }
 
 .apo-page-header-column > .apo-page-title {
-  font-family: "Unna", sans-serif;
+  font-family: "made-tommy-medium";
   color: var(--tirth-color);
   top: 0;
   left: 0;
@@ -3082,7 +3098,7 @@ textarea:not([rows]) {
   display: block;
   width: 3px;
   height: 3px;
-  background-color: var(--tirth-color);
+  background-color: var(--second-color);
   border-radius: 50%;
   position: absolute;
   right: 0;
@@ -3231,9 +3247,10 @@ textarea:not([rows]) {
 
 .apo-accordion-definition,
 .apo-toggle-definition {
-  font-size: 14px;
+  font-size: 18px;
   color: rgba(0, 0, 0, 0.7);
   padding: 21px 0 10px;
+  font-family: "made-tommy-light";
 }
 
 /* ------------------------------------------------------
@@ -3284,10 +3301,10 @@ textarea:not([rows]) {
   z-index: 1;
   display: block;
   padding: 14px 20px 9px;
-  color: rgba(0, 0, 0, 0.5);
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.1);
+  color: var(--tirth-color);
 }
 
 .apo-tabs-nav > li > a::after {
@@ -3300,7 +3317,7 @@ textarea:not([rows]) {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: #000;
+  background-color: var(--first-color);
 }
 
 .apo-no-cssanimations .apo-tabs-nav > li > a::after {
@@ -3326,14 +3343,15 @@ textarea:not([rows]) {
 .apo-tabs-nav .apo-active,
 .apo-tabs.apo-vertical-tabs .apo-tabs-nav .apo-active {
   font-weight: 600;
-  color: #000;
+  color: var(--first-color);
   border-color: #000;
 }
 
 .apo-tabs-container {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 30px;
   color: rgba(0, 0, 0, 0.7);
+  font-family: "made-tommy-light";
 }
 
 /* ------------------------------------------------------
@@ -3702,7 +3720,7 @@ hr:not(:last-child) {
         7.14. Testimonials
     ------------------------------------------------------ */
 .apo-testimonial {
-  font-family: 'PT Serif', serif;
+  font-family: "made-tommy-light";
   font-size: 17px;
   line-height: 30px;
   font-style: italic;
@@ -3710,6 +3728,7 @@ hr:not(:last-child) {
   position: relative;
   z-index: 1;
   padding: 45px 0 0;
+  color: var(--tirth-color);
 }
 
 .apo-testimonial::before {
@@ -3725,7 +3744,7 @@ hr:not(:last-child) {
 .apo-testimonial footer,
 .apo-testimonial .apo-testimonial-author {
   font-style: normal;
-  font-family: 'Poppins', sans-serif;
+  font-family: "made-tommy-light";
   text-align: initial;
   padding: 0;
 }
@@ -3745,6 +3764,7 @@ hr:not(:last-child) {
 .apo-testimonial .apo-testimonial-author-name {
   font-weight: 600;
   color: var(--first-color);
+  font-family: "made-tommy-medium";
 }
 
 .apo-testimonial .apo-testimonial-author-name:not(:last-child) {
@@ -3757,7 +3777,7 @@ hr:not(:last-child) {
   font-weight: 300;
   text-transform: none;
   letter-spacing: 0;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--tirth-color);
 }
 
 /* ------------------------------------------------------
@@ -4012,7 +4032,7 @@ hr:not(:last-child) {
 }
 
 .apo-social-networks-title {
-  font-family: "Poppins", sans-serif;
+  font-family: "made-tommy-light";
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
@@ -4081,11 +4101,11 @@ hr:not(:last-child) {
 
 .apo-counter::before {
   content: attr(data-value);
-  font-family: 'Unna', sans-serif;
+  font-family: "made-tommy-light";
   font-size: 68px;
   line-height: 60px;
   font-weight: 400;
-  color: #000000;
+  color: var(--tirth-color);
   word-break: break-all;
   display: block;
 }
@@ -5387,7 +5407,7 @@ table {
 .apo-widget-title {
   font-size: 14px;
   line-height: 24px;
-  font-family: "Poppins", sans-serif;
+  font-family: "made-tommy-medium";
   font-weight: 500;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -5481,7 +5501,7 @@ table {
   font-size: 30px;
   line-height: 1em;
   font-weight: 400;
-  font-family: 'Unna', sans-serif;
+  font-family: "made-tommy-medium";
   color: #fff;
   word-break: break-all;
 }
@@ -5491,7 +5511,7 @@ table {
 }
 
 .apo-footer .apo-contact-info-widget a {
-  color: var(--tirth-color);
+  color: var(--second-color);
   background-position: 0 33px;
 }
 
@@ -7469,10 +7489,13 @@ table {
 
 .apo-contact-info-section p:not(:last-child) {
   margin-bottom: 30px;
+  font-family: "made-tommy-light";
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .apo-contact-info-section .apo-contact-info {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .apo-contact-info-section .apo-contact-info a {
@@ -7581,7 +7604,7 @@ table {
 }
 
 .apo-photo-stream .fp-section .apo-section-title {
-  font-family: "Abril Fatface", sans-serif;
+  font-family: "made-tommy-medium";
   font-size: 72px;
   font-weight: 400;
   line-height: 68px;
@@ -7608,6 +7631,7 @@ table {
   line-height: 22px;
   letter-spacing: 6px;
   display: block;
+  font-family: "made-tommy-light";
 }
 
 .apo-photo-stream-category:not(:last-child) {
@@ -7792,7 +7816,7 @@ table {
     13. Footer
 ------------------------------------------------------ */
 .apo-footer {
-  color: var(--tirth-color);
+  color: var(--second-color);
   background-color: var(--first-color);
   padding: 85px 0;
 }
@@ -7809,7 +7833,7 @@ table {
 }
 
 .apo-footer a {
-  color: var(--tirth-color);
+  color: var(--second-color);
 }
 
 .apo-footer a:hover,
@@ -7818,7 +7842,7 @@ table {
 }
 
 .apo-footer .apo-widget-title {
-  color: var(--tirth-color);
+  color: var(--second-color);
   font-weight: 600;
   letter-spacing: 1.5px;
 }
