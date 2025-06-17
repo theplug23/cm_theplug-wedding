@@ -3,15 +3,21 @@
 
 <head>
   <!-- Basic page needs-->
-  <title>Contact - Moments Precieux</title>
+  <title>Contactez Moments Précieux | Photographie Mariage et Evènements au Cameroun</title>
   <meta charset="UTF-8" />
   <meta name="author" content="Moments Précieux" />
   <meta name="description"
-    content="Contactez Moments Précieux pour organiser votre mariage de rêve. Nous sommes basés au Cameroun et spécialisés dans la planification d'évènements sur-mesure." />
+    content="Contactez Moments Précieux, photographe & event planner au Cameroun. Planifiez un mariage inoubliable ou un événement personnalisé selon vos goûts et préférences avec notre équipe d'experts en organisation." />
   <meta name="keywords"
-    content="contact, mariage, wedding planner, Cameroun, organisation mariage, événements, Moments Précieux, douala, logpom, makepe" />
+    content="contact photographe & event planner Cameroun, organisateur mariage Douala, événement Cameroun, Moments Précieux contact, mariage sur mesure, agence événementielle Yaoundé" />
   <!-- Mobile specific metas-->
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta property="og:title" content="Contactez Moments Précieux | Photographe & Event Planner au Cameroun">
+  <meta property="og:description"
+    content="Contactez-nous pour votre mariage ou évènement sur mesure à Douala, Yaoundé, et dans tout le Cameroun.">
+  <meta property="og:image" content="https://www.momentsprécieux.com/img/ico-taupe-loader.png">
+  <meta property="og:url" content="https://www.momentsprécieux.com/contact">
+  <meta property="og:type" content="website">
   <!-- Favicon-->
   <link rel="shortcut icon" href="img/ico-blanc.png" type="image/x-icon" />
   <!-- Google Web Fonts-->
@@ -38,8 +44,9 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ContactPage",
-      "url": "https://www.momentsprecieux.com/contact",
+      "@type": "Organization",
+      "url": "https://www.momentsprécieux.com/contact",
+      "logo": "https://www.momentsprécieux.com/img/logo-taupe.png",
       "name": "Moments Précieux",
       "description": "Contactez Moments Précieux pour organiser ou couvrir votre mariage ou tout autre évènement au Cameroun.",
       "telephone": "+237686117771",
@@ -50,7 +57,25 @@
         "addressLocality": "Douala",
         "addressRegion": "Littoral",
         "postalCode": "00000"
-      }
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+237686117771",
+        "contactType": "customer service",
+        "areaServed": [
+          { "@type": "Place", "name": "Douala" },
+          { "@type": "Place", "name": "Yaoundé" },
+          { "@type": "Place", "name": "Bafoussam" },
+          { "@type": "Place", "name": "Garoua" },
+          { "@type": "Place", "name": "Limbé" },
+          { "@type": "Place", "name": "Bertoua" }
+        ],
+        "availableLanguage": ["fr"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/share/15vY1Rdzfc/?mibextid=wwXIfr",
+        "https://www.instagram.com/momentsprecieux_"
+      ]
     }
   </script>
 </head>
@@ -61,7 +86,8 @@
     <div class="apo-preloader-outer">
       <div class="apo-preloader-inner">
         <div class="apo-loader">
-          <img src="img/ico-taupe-loader.png" alt="">
+          <img src="img/ico-taupe-loader.png"
+            alt="Logo de Moments Précieux - photographe mariage & évènements au Cameroun">
         </div>
       </div>
     </div>
@@ -75,12 +101,14 @@
         <header class="apo-hidden-column-header">
           <div class="apo-hidden-column-col">
             <div class="apo-grid apo-cols-2">
-              <div class="apo-grid-col"><a href="home" class="apo-logo"><img src="img/logo-taupe.png" alt="" /></a>
+              <div class="apo-grid-col"><a href="home" class="apo-logo"><img src="img/logo-taupe.png"
+                    alt="Logo Moments Précieux" /></a>
               </div>
               <div class="apo-grid-col apo-align-right">
                 <!-- Social Networks-->
                 <ul class="apo-social-networks">
-                  <li><a href="https://www.facebook.com/share/15vY1Rdzfc/?mibextid=wwXIfr" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.facebook.com/share/15vY1Rdzfc/?mibextid=wwXIfr" target="_blank"><i
+                        class="fa fa-facebook"></i></a></li>
                   <li><a href="https://instagram.com/momentsprecieux_" target="_blank"><i
                         class="fa fa-instagram"></i></a></li>
                 </ul>
@@ -100,17 +128,6 @@
                 </li>
                 <li class="apo-has-children"><a href="portfolio">Portfolio</a>
                 </li>
-                <!-- <li class="apo-has-children"><a href="blog_classic_sortable_3_columns.html">Blog</a>
-                    <ul class="apo-sub-menu">
-                      <li><a href="blog_classic_sortable_3_columns.html">Classic Sortable 3 Columns</a></li>
-                      <li><a href="blog_classic_2_columns_with_sidebar.html">Classic 2 Columns With Sidebar</a></li>
-                      <li><a href="blog_grid_2_columns.html">Grid 2 Columns</a></li>
-                      <li><a href="blog_element_sizing_4_columns.html">Element Sizing 4 Columns</a></li>
-                      <li><a href="blog_fit_width_4_columns.html">Fit Width 4 Columns</a></li>
-                      <li><a href="blog_single_post.html">Single Blog Post</a></li>
-                      <li><a href="blog_single_post_with_sidebar.html">Single Blog Post With Sidebar</a></li>
-                    </ul>
-                  </li> -->
                 <li class="apo-has-children apo-current"><a href="contact">Contact</a></li>
               </ul>
             </nav>
@@ -135,13 +152,15 @@
       <div class="apo-header-component-first">
         <div class="apo-header-items">
           <div class="apo-header-item">
-            <!-- Logo--><a href="home" title="Home" class="apo-logo"><img src="img/ico-taupe.png" alt="Logo" /></a>
+            <!-- Logo--><a href="home" title="Home" class="apo-logo"><img src="img/ico-taupe.png"
+                alt="Logo de Moments Précieux - photographe mariage & évènements au Cameroun" /></a>
             <!-- End Logo-->
           </div>
           <div class="apo-header-item">
             <!-- Social Networks-->
             <ul class="apo-social-networks">
-              <li><a href="https://www.facebook.com/share/15vY1Rdzfc/?mibextid=wwXIfr" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.facebook.com/share/15vY1Rdzfc/?mibextid=wwXIfr" target="_blank"><i
+                    class="fa fa-facebook"></i></a></li>
               <li><a href="https://instagram.com/momentsprecieux_" target="_blank"><i class="fa fa-instagram"></i></a>
               </li>
             </ul>
@@ -168,7 +187,8 @@
             <div type="button" data-arctic-modal="modals/modal_full_screen_navigation.html"
               data-arctic-modal-type="ajax"
               class="apo-header-button hamburger apo-d-none apo-d-xs-inline-block hamburger--emphatic apo-hamburger-clickable">
-              <span class="hamburger-box"><span class="hamburger-inner"></span></span></div>
+              <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+            </div>
             <!-- End Navigation Button-->
           </div>
         </div>
@@ -177,7 +197,7 @@
   </header>
   <!-- End Site Header-->
   <!-- Page Content-->
-  <div class="apo-page">
+  <main class="apo-page" role="main">
     <!-- Content Section-->
     <div class="apo-section apo-fullheight-section apo-align-left apo-contact-sameheight-section">
       <div class="apo-section-blur-bg">
@@ -187,7 +207,8 @@
         <div class="row apo-same-height-container">
           <div class="col-sm-6 apo-same-height">
             <div class="apo-contact-info-section">
-              <p>Nous acceptons actuellement de nouveaux projets.<br />Vous souhaitez discuter du vôtre ?</p>
+              <p>Vous recherchez un photographe, un event planner ?<br /> Moments Précieux est à votre
+                écoute<br /><br />Contactez-nous pour un devis personnalisé</p>
               <!-- <ul class="apo-contact-info">
                   <li><a href="mailto:info@theplug-wedding.com">info@theplug-wedding.com</a></li>
                   <li><a href="tel:+237686117771">+237 6 86 11 77 71</a></li>
@@ -196,8 +217,10 @@
                 <h5 class="apo-social-networks-title">Nous suivre</h5>
                 <!-- Social Networks-->
                 <ul class="apo-social-networks apo-style-2">
-                  <li><a href="https://www.facebook.com/share/15vY1Rdzfc/?mibextid=wwXIfr" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://www.instagram.com/momentsprecieux_" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://www.facebook.com/share/15vY1Rdzfc/?mibextid=wwXIfr" target="_blank"><i
+                        class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com/momentsprecieux_" target="_blank"><i
+                        class="fa fa-instagram"></i></a></li>
                   <!-- <li><a href="#"><i class="fa fa-youtube-play"></i></a></li> -->
                 </ul>
                 <!-- End Social Networks-->
@@ -206,7 +229,8 @@
           </div>
           <div class="col-sm-6 apo-same-height">
             <h2>Envoyez-nous un message</h2>
-            <h3 class="apo-section-sub-title">N'hésitez pas à utiliser le formulaire et nous vous répondrons rapidement.
+            <h3 class="apo-section-sub-title">Nous répondons sous 24h. Contactez-nous aussi par téléphone au <a
+                href="tel:+237686117771">+237 6 86 11 77 71</a>
             </h3>
             <!-- Contact Form-->
             <form class="apo-contact-form" action="https://formspree.io/f/xpzvqgav" method="POST">
@@ -240,7 +264,7 @@
       </div>
     </div>
     <!-- End Content Section-->
-  </div>
+  </main>
   <!-- End Page Content-->
   <!-- Footer-->
   <footer id="footer" data-bg-img-src="images/footer_bg.png" class="apo-footer">
