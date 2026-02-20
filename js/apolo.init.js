@@ -70,7 +70,7 @@
 			if(accordions.length){
 				accordions.MadAccordion({
 					easing: 'easeOutQuint',
-					speed: 600,
+					speed: 800,
 					cssPrefix: 'apo-'
 				});
 			}
