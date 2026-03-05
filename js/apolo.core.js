@@ -910,6 +910,7 @@
 				}
 			},
 			fancybox: function() {
+				if( !$.fancybox || !$.fancybox.defaults ) return;
 				$.fancybox.defaults.infobar = false;
 				$.fancybox.defaults.afterClose = function() {
 					if($.fn.fullpage) $.fn.fullpage.reBuild();

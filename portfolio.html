@@ -2,152 +2,120 @@
 <html lang="fr">
 
 <head>
-  <style>
-    .carousel {
-      position: relative;
-    }
-
-    .carousel-prev,
-    .carousel-next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      color: white;
-      font-size: 30px;
-      cursor: pointer;
-      z-index: 9999;
-    }
-
-    .carousel .modal .carousel-prev {
-      left: 80px;
-    }
-
-    .carousel .modal .carousel-next {
-      right: 80px;
-    }
-
-    .modal {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      text-align: center;
-      z-index: 9999;
-    }
-
-    .modal img {
-      border-radius: 10px;
-      cursor: pointer;
-      max-width: 80%;
-      max-height: 60%;
-      margin-top: 10%;
-    }
-
-    .modal a {
-      font-size: 40px;
-      color: #fff;
-    }
-
-    .modal a:hover {
-      cursor: pointer;
-    }
-  </style>
-  <!-- Basic page needs-->
-  <title>Portfolio - Moments Précieux | Photographie Mariage et Evènements au Cameroun</title>
   <meta charset="UTF-8" />
-  <meta name="author" content="Moments Precieux" />
+  <title>Portfolio | Moments Précieux - Mariages et Événements au Cameroun</title>
+  <meta name="author" content="Moments Précieux" />
   <meta name="description"
-    content="Découvrez nos réalisations en photographie et vidéo au Cameroun. Immortalisez vos instants précieux avec notre expertise et créativité." />
+    content="Choisissez votre univers : Portfolio Mariages ou Portfolio Événements. Découvrez nos réalisations photo et vidéo au Cameroun." />
   <meta name="keywords"
-    content="Moments Precieux, photographie, Douala, vidéaste  Cameroun, photographie mariage, vidéo mariage, moments précieux, photographe événementiel, couverture évènements" />
-  <!-- Mobile specific metas-->
+    content="portfolio mariage Cameroun, portfolio événements Cameroun, photographe mariage Douala, vidéaste événementiel" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta property="og:title" content="Portfolio | Moments Précieux - Photographe et Vidéaste au Cameroun" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <link rel="canonical" href="https://www.momentsprecieux.com/portfolio" />
+  <meta property="og:title" content="Portfolio | Moments Précieux" />
   <meta property="og:description"
-    content="Plongez dans notre galerie de photos et vidéos, illustrant des instants capturés à Yaoundé, Douala et ailleurs au Cameroun. Mariages, portraits, événements." />
-  <meta property="og:image" content="https://www.momentsprécieux.com/img/ico-taupe-loader.png" />
+    content="Parcourez nos univers dédiés : Mariages et Événements. Une direction artistique élégante, humaine et impactante." />
+  <meta property="og:image" content="https://www.momentsprecieux.com/wedding_web/Photo-73.jpg" />
+  <meta property="og:url" content="https://www.momentsprecieux.com/portfolio" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.momentsprécieux.com/portfolio" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.momentsprécieux.com/portfolio" />
-  <!-- Favicon-->
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <link rel="shortcut icon" href="img/ico-blanc.png" type="image/x-icon" />
-  <!-- Google Web Fonts-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unna" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli" />
-  <!-- Vendor CSS-->
   <link rel="stylesheet" media="all" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" media="all" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" media="all" href="css/linearicons.css" />
-  <link rel="stylesheet" media="all" href="css/apolo-icons.css" />
   <link rel="stylesheet" media="all" href="css/hamburgers.min.css" />
-  <link rel="stylesheet" media="all" href="css/animate.css" />
-  <link rel="stylesheet" media="all" href="vendors/fancybox/jquery.fancybox.min.css" />
-  <link rel="stylesheet" media="all" href="vendors/owl-carousel/assets/owl.carousel.min.css" />
   <link rel="stylesheet" media="all" href="vendors/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
   <link rel="stylesheet" media="all" href="vendors/arcticmodal/jquery.arcticmodal-0.3.css" />
-  <!-- Theme CSS-->
   <link rel="stylesheet" media="all" href="css/style.css" />
-  <!-- Vendor JS-->
   <script src="vendors/modernizr.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.momentsprecieux.com/#organization",
+          "url": "https://www.momentsprecieux.com/",
+          "name": "Moments Précieux",
+          "logo": "https://www.momentsprecieux.com/img/logo-taupe.png"
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://www.momentsprecieux.com/portfolio#webpage",
+          "url": "https://www.momentsprecieux.com/portfolio",
+          "name": "Portfolio - Moments Précieux",
+          "inLanguage": "fr-FR",
+          "about": {
+            "@id": "https://www.momentsprecieux.com/#organization"
+          }
+        }
+      ]
+    }
+  </script>
 </head>
 
-<body class="apo-header-vertical-left">
-  <!-- Preloader-->
+<body class="mp-portfolio-hub apo-header-vertical-left apo-page-dark-skin">
   <div class="apo-preloader">
     <div class="apo-preloader-outer">
       <div class="apo-preloader-inner">
         <div class="apo-loader">
-          <img src="img/ico-taupe-loader.png" alt="">
+          <img src="img/ico-taupe-loader.png" alt="Logo de Moments Précieux" />
         </div>
       </div>
     </div>
   </div>
-  <!-- End Preloader-->
-  <!-- Site Header-->
-  <!-- Hidden Side Column-->
+
   <div>
     <aside id="apo-hidden-column" class="apo-hidden-column">
       <div class="apo-hidden-column-container">
         <header class="apo-hidden-column-header">
           <div class="apo-hidden-column-col">
             <div class="apo-grid apo-cols-2">
-              <div class="apo-grid-col"><a href="home" class="apo-logo"><img src="img/logo-taupe.png" alt="" /></a>
+              <div class="apo-grid-col">
+                <a href="home" class="apo-logo" title="Accueil">
+                  <img src="img/logo-taupe.png" alt="Logo Moments Précieux" />
+                </a>
               </div>
               <div class="apo-grid-col apo-align-right">
-                <!-- Social Networks-->
                 <ul class="apo-social-networks">
-                  <li><a href="https://www.facebook.com/share/15vY1Rdzfc/?mibextid=wwXIfr" target="_blank"><i
-                        class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://instagram.com/momentsprecieux_" target="_blank"><i
-                        class="fa fa-instagram"></i></a></li>
+                  <li>
+                    <a href="https://www.facebook.com/share/18MALVw1cS/" target="_blank" rel="noopener noreferrer"
+                      aria-label="Facebook Moments Précieux"><i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://instagram.com/momentsprecieux_" target="_blank" rel="noopener noreferrer"
+                      aria-label="Instagram Moments Précieux"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.tiktok.com/@moments.precieux" target="_blank" rel="noopener noreferrer"
+                      aria-label="TikTok Moments Précieux">
+                      <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                  </li>
                 </ul>
-                <!-- End Social Networks-->
               </div>
             </div>
           </div>
         </header>
         <div class="apo-hidden-column-content">
           <div class="apo-hidden-column-col">
-            <!-- Navigation-->
             <nav class="apo-navigation-container">
               <ul class="apo-navigation">
-                <li class="apo-has-children"><a href="home">Accueil</a>
+                <li class="apo-has-children"><a href="home">Accueil</a></li>
+                <li class="apo-has-children"><a href="about">À propos</a></li>
+                <li class="apo-has-children apo-current">
+                  <a href="portfolio">Portfolio</a>
+                  <ul class="apo-sub-menu">
+                    <li><a href="portfolio-mariage">Mariages</a></li>
+                    <li><a href="portfolio-evenements">Événements</a></li>
+                  </ul>
                 </li>
-                <li class="apo-has-children"><a href="about">A propos</a>
-                </li>
-                <li class="apo-has-children apo-current"><a href="portfolio">Portfolio</a>
-                </li>
-                <li><a href="contact">Contact</a></li>
+                <li class="apo-has-children"><a href="contact">Contact</a></li>
               </ul>
             </nav>
-            <!-- End Navigation-->
           </div>
         </div>
         <footer class="apo-hidden-column-footer">
@@ -162,24 +130,33 @@
       </div>
     </aside>
   </div>
-  <!-- End Hidden Side Column-->
+
   <header id="header" class="apo-header apo-header-light apo-header-vertical">
     <div class="apo-header-section">
       <div class="apo-header-component-first">
         <div class="apo-header-items">
           <div class="apo-header-item">
-            <!-- Logo--><a href="home" title="Home" class="apo-logo"><img src="img/ico-taupe.png" alt="Logo" /></a>
-            <!-- End Logo-->
+            <a href="home" title="Accueil" class="apo-logo">
+              <img src="img/ico-taupe.png" alt="Logo de Moments Précieux" />
+            </a>
           </div>
           <div class="apo-header-item">
-            <!-- Social Networks-->
             <ul class="apo-social-networks">
-              <li><a href="https://www.facebook.com/share/15vY1Rdzfc/?mibextid=wwXIfr" target="_blank"><i
-                    class="fa fa-facebook"></i></a></li>
-              <li><a href="https://instagram.com/momentsprecieux_" target="_blank"><i class="fa fa-instagram"></i></a>
+              <li>
+                <a href="https://www.facebook.com/share/18MALVw1cS/" target="_blank" rel="noopener noreferrer"
+                  aria-label="Facebook Moments Précieux"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://instagram.com/momentsprecieux_" target="_blank" rel="noopener noreferrer"
+                  aria-label="Instagram Moments Précieux"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@moments.precieux" target="_blank" rel="noopener noreferrer"
+                  aria-label="TikTok Moments Précieux">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
               </li>
             </ul>
-            <!-- End Social Networks-->
           </div>
         </div>
       </div>
@@ -193,544 +170,109 @@
       <div class="apo-header-component-last">
         <div class="apo-header-items">
           <div class="apo-header-item">
-            <!-- Navigation Button-->
-            <div type="button"
-              class="apo-header-button apo-hidden-column-invoker apo-d-xs-none hamburger hamburger--emphatic"><span
-                class="hamburger-box"><span class="hamburger-inner"></span></span></div>
-            <!-- End Navigation Button-->
-            <!-- Navigation Button-->
-            <div type="button" data-arctic-modal="modals/modal_full_screen_navigation.html"
-              data-arctic-modal-type="ajax"
-              class="apo-header-button hamburger apo-d-none apo-d-xs-inline-block hamburger--emphatic apo-hamburger-clickable">
+            <button type="button"
+              class="apo-header-button apo-hidden-column-invoker apo-d-xs-none hamburger hamburger--emphatic"
+              aria-controls="apo-hidden-column" aria-label="Ouvrir le menu de navigation">
               <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-            </div>
-            <!-- End Navigation Button-->
+            </button>
+            <button type="button" data-arctic-modal="modals/modal_full_screen_navigation.html"
+              data-arctic-modal-type="ajax"
+              class="apo-header-button hamburger apo-d-none apo-d-xs-inline-block hamburger--emphatic apo-hamburger-clickable"
+              aria-label="Ouvrir le menu mobile">
+              <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <!-- End Site Header-->
-  <!-- Page Content-->
-  <main class="apo-page" role="main">
-    <!-- Parallax Grid -->
-    <div class="apo-parallax-grid apo-portfolio-container apo-style-2 apo-portfolio-appear" data-columns-sm="2"
-      data-columns-md="3" data-columns-lg="4">
-      <div class="carousel">
-        <div class="modal">
-          <a class="carousel-prev">&#10094;</a>
-          <img src="" alt="Image en taille réelle">
-          <a class="carousel-next">&#10095;</a>
+
+  <main class="apo-page mp-portfolio-page" role="main">
+    <section class="apo-section apo-section-no-spacing mp-portfolio-hero" data-bg-img-src="img/Portrait-14.jpg">
+      <div class="mp-portfolio-hero-overlay"></div>
+      <div class="container">
+        <div class="mp-portfolio-hero-content mp-reveal">
+          <p class="mp-portfolio-eyebrow">PORTFOLIO</p>
+          <h2 class="mp-portfolio-title">Deux univers, une même exigence visuelle</h2>
+          <p class="mp-portfolio-lead">
+            Découvrez nos réalisations selon votre besoin : l’univers mariage d’un côté, et la couverture
+            événementielle globale de l’autre.
+          </p>
         </div>
       </div>
-      <div class="apo-parallax-grid-item">
+    </section>
 
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-73.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
+    <section class="apo-section mp-portfolio-choice-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <article class="mp-portfolio-choice-card mp-reveal">
+              <div class="mp-portfolio-choice-media">
+                <img src="wedding_web/Photo-25.jpg" alt="Collection Mariages - Moments Précieux" loading="lazy" />
+              </div>
+              <div class="mp-portfolio-choice-body">
+                <p class="mp-portfolio-choice-eyebrow">Collection dédiée</p>
+                <p>
+                  Cérémonies civiles et religieuses, préparatifs, cocktails, réceptions et détails éditoriaux:
+                  tout l’univers du mariage en photo et en vidéo.
+                </p>
+                <a class="apo-btn apo-btn-small mp-portfolio-choice-btn" href="portfolio-mariage">Explorer les
+                  mariages</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <article class="mp-portfolio-choice-card mp-reveal">
+              <div class="mp-portfolio-choice-media">
+                <img src="img/Portrait-76.jpg" alt="Collection Événements - Moments Précieux" loading="lazy" />
+              </div>
+              <div class="mp-portfolio-choice-body">
+                <p class="mp-portfolio-choice-eyebrow">Collection transversale</p>
+                <p>
+                  Anniversaires, corporate, cérémonies officielles, soirées privées ou institutionnelles:
+                  un portfolio pensé pour toutes les expériences hors mariage.
+                </p>
+                <a class="apo-btn apo-btn-small mp-portfolio-choice-btn" href="portfolio-evenements">Explorer les
+                  événements</a>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-21.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-55.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-70.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-72.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-23.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-61.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-65.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-67.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-66.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-58.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-12.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-4.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-40.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-3.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-7.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-49.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-29.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="img/Portrait-7.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-44.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="img/Portrait-15.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-14.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-45.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-18.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-19.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-29.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-35.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-6.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-9.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-8.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-46.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-59.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-57.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-74.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-69.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-26.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-20.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-15.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="wedding_web/Photo-62.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="img/Portrait-4.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="img/Portrait-14.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="img/Portrait-35.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="img/Portrait-42.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="img/Portrait-43.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="img/Portrait-67.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <!--personnel-->
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="Perso/IMG_2092.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="Perso/Photo.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="Perso/Photo-2.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="Perso/Photo-3.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="Perso/Photo-4.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="Perso/Photo-5.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="Perso/Photo-6.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="Perso/Photo-7.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="Perso/Photo-8.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="Perso/Photo-9.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="Perso/Photo-10.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-      <div class="apo-parallax-grid-item">
-        <!-- Article-->
-        <article class="apo-project">
-          <div class="apo-project-media"><a href="#"><img src="Perso/Photo-11.jpg"
-                alt="Photo de mariage par Moments Précieux" loading="lazy" /></a></div>
-
-        </article>
-      </div>
-    </div>
-    <!-- End Parallax Grid -->
+    </section>
   </main>
-  <!-- End Page Content-->
-  <!-- Footer-->
+
   <footer id="footer" data-bg-img-src="images/footer_bg.png" class="apo-footer">
     <div class="container">
       <div class="apo-widget-area apo-cols-4">
-        <!-- Widget-->
         <section class="apo-widget apo-widget-size-1_7x apo-contact-info-widget">
           <h2 class="apo-widget-title"></h2>
           <ul class="apo-contact-info">
             <li><a href="mailto:info@theplug-wedding.com">info@theplug-wedding.com</a></li>
             <li><a href="tel:+237686117771">+237 6 86 11 77 71</a></li>
           </ul>
-          <p style="font-size: 15px;">&copy; 2025 MOMENTS PRECIEUX | Tous droits réservés | Conçu par <a
-              href="https://stephanekamwa.de" target="_blank">THEPLUG</a></p>
+          <p style="font-size: 15px;">&copy; 2026 MOMENTS PRECIEUX | Tous droits réservés | Conçu par <a
+              href="https://stephanekamwa.de" target="_blank" rel="noopener noreferrer">THEPLUG</a></p>
         </section>
-        <!-- End Widget-->
-        <!-- Widget-->
         <section class="apo-widget apo-widget-size-0_65x">
           <h2 class="apo-widget-title">Navigation</h2>
           <ul style="font-size: 15px;">
-            <li> <a href="home">Accueil</a></li>
-            <li> <a href="about">A Propos</a></li>
-            <li> <a href="portfolio">Portfolio</a></li>
-            <li> <a href="contact">Contact</a></li>
+            <li><a href="home">Accueil</a></li>
+            <li><a href="about">À propos</a></li>
+            <li><a href="portfolio">Portfolio</a></li>
+            <li><a href="contact">Contact</a></li>
           </ul>
         </section>
-        <!-- End Widget-->
-        <!-- Widget-->
         <section class="apo-widget apo-widget-size-0_65x">
-          <h2 class="apo-widget-title">Suivez nous</h2>
+          <h2 class="apo-widget-title">Suivez-nous</h2>
           <ul style="font-size: 15px;">
-            <li> <a href="https://www.facebook.com/share/15vY1Rdzfc/?mibextid=wwXIfr" target="_blank">Facebook</a></li>
-            <li> <a href="https://instagram.com/momentsprecieux_" target="_blank">Instagram</a></li>
-            <!-- <li> <a href="#">Twitter</a></li> -->
-            <!-- <li> <a href="#">Youtube</a></li> -->
+            <li><a href="https://www.facebook.com/share/18MALVw1cS/" target="_blank"
+                rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://instagram.com/momentsprecieux_" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+            <li> <a href="https://www.tiktok.com/@moments.precieux" target="_blank">TitTok</a></li>
           </ul>
         </section>
-        <!-- End Widget-->
-        <!-- Widget-->
         <section class="apo-widget">
           <h2 class="apo-widget-title">Villes</h2>
           <ul style="font-size: 15px;" class="apo-hr-dotted-list">
@@ -744,11 +286,8 @@
             <li>Kribi</li>
             <li>Limbé</li>
             <li>Bertoua</li>
-            <li>Ebolowa</li>
-            <li>Buéa</li>
           </ul>
         </section>
-        <!-- End Widget-->
       </div>
       <div class="backtotop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="45" height="45"
           fill="rgba(192,133,132,1)">
@@ -758,120 +297,20 @@
         </svg></div>
     </div>
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-    <div class="elfsight-app-d7ac4587-d61c-49dc-882e-bcdd704ce704" data-elfsight-app-lazy
-      style="position: fixed; z-index: 1;"></div>
+    <div class="elfsight-app-d7ac4587-d61c-49dc-882e-bcdd704ce704" data-elfsight-app-lazy></div>
   </footer>
-  <!-- End Footer-->
-  <!-- Vendor JS-->
+
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="vendors/handlebars-v4.0.5.js"></script>
-
-  <script src="vendors/wt.validator.min.js"></script>
   <script src="vendors/jquery.easing.1.3.min.js"></script>
-  <script src="vendors/mad.accordion.js"></script>
-  <script src="vendors/mad.customselect.js"></script>
-  <script src="vendors/mad.tabs.js"></script>
-  <script src="vendors/wat.counters.js"></script>
+  <script src="vendors/handlebars-v4.0.5.js"></script>
   <script src="vendors/wt.jquery.nav.1.0.js"></script>
-  <script src="vendors/isotope.pkgd.min.js"></script>
-  <script src="vendors/imagesloaded.pkgd.min.js"></script>
-  <script src="vendors/fancybox/jquery.fancybox.min.js"></script>
-  <script src="vendors/appear.min.js"></script>
-  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
   <script src="vendors/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="vendors/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
-  <!-- Theme JS-->
   <script src="js/apolo.core.js"></script>
-  <script src="js/modules/apolo.newsletter.js"></script>
-  <script src="js/modules/apolo.sameheight.js"></script>
-  <script src="js/modules/apolo.appear.js"></script>
-  <script src="js/modules/apolo.parallax-grid.js"></script>
   <script src="js/apolo.init.js"></script>
   <script src="js/backtotop.js"></script>
-  <script>
-    // Fonction pour mélanger un tableau aléatoirement
-    function shuffleArray(array) {
-      for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-      }
-      return array;
-    }
-
-    // Sélectionnez tous les éléments img avec la classe "apo-project-media"
-    const imageElements = document.querySelectorAll('.apo-project-media img');
-
-    // Créez un tableau avec les sources d'image actuelles
-    const imageSources = Array.from(imageElements).map(img => img.src);
-
-    // Mélangez les sources d'image de manière aléatoire
-    const shuffledSources = shuffleArray(imageSources);
-
-    // Remplacez les sources d'image des éléments img avec les sources mélangées
-    imageElements.forEach((img, index) => {
-      img.src = shuffledSources[index];
-    });
-
-
-    var images = document.querySelectorAll(".apo-parallax-grid-item img");
-    var modal = document.querySelector(".modal");
-    var modalImage = modal.querySelector("img");
-    var carouselPrev = document.querySelector(".carousel-prev");
-    var carouselNext = document.querySelector(".carousel-next");
-    var currentImageIndex = 0;
-
-    function showImage(index) {
-      var imageSrc = images[index].getAttribute("src");
-      modalImage.src = imageSrc;
-      modal.style.display = "block";
-    }
-
-    function hideModal() {
-      modal.style.display = "none";
-    }
-
-    function showPrevImage(event) {
-      event.stopPropagation();
-      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-      showImage(currentImageIndex);
-    }
-
-    function showNextImage(event) {
-      event.stopPropagation();
-      currentImageIndex = (currentImageIndex + 1) % images.length;
-      showImage(currentImageIndex);
-    }
-
-    // Fonction pour gérer les événements de pression sur le clavier
-    function handleKeyPress(event) {
-      if (event.keyCode === 37) { // Touche "flèche gauche"
-        showPrevImage(event);
-      } else if (event.keyCode === 39) { // Touche "flèche droite"
-        showNextImage(event);
-      } else if (event.keyCode === 27) { // Touche "Esc"
-        hideModal();
-      }
-    }
-
-    // Gestionnaire d'événement pour les clics sur les flèches de navigation
-    carouselPrev.addEventListener("click", showPrevImage);
-    carouselNext.addEventListener("click", showNextImage);
-
-    // Gestionnaire d'événement pour les touches du clavier
-    document.addEventListener("keydown", handleKeyPress);
-
-    // Parcourir les éléments d'image et ajouter les gestionnaires d'événements pour afficher les modales
-    images.forEach(function (image, index) {
-      image.addEventListener("click", function () {
-        currentImageIndex = index;
-        showImage(currentImageIndex);
-      });
-    });
-
-    // Gestionnaire d'événement pour cacher la modale en cliquant à l'extérieur de celle-ci
-    modal.addEventListener("click", hideModal);
-  </script>
+  <script src="js/portfolio-media.js"></script>
 </body>
 
 </html>
